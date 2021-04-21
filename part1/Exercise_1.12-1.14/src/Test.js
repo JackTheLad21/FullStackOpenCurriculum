@@ -9,6 +9,7 @@ export default function Test () {
   // Init viene lanciato la prima volta quando il componente viene caricato
   const init = () => {
     setState(anedotes.map((a, i) => ({ summary: a, votes: 0 })))
+    console.log(state)
   }
 
   // Questo viene lanciato ogni volta che la variabile state cambia
